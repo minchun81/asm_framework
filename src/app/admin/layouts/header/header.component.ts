@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, HostListener, } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,9 +6,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
 
   ngOnInit() {
   }
+  dropdownOpen = false;
 
+    toggleDropdown(dropdownMenu: HTMLElement) {
+      event.preventDefault();
+        this.dropdownOpen = !this.dropdownOpen;
+        if (this.dropdownOpen) {
+            dropdownMenu.classList.add('show');
+        } else {
+            dropdownMenu.classList.remove('show');
+        }
+    }
+    
+    constructor() { }
+
+    @HostListener('document:click', ['$event.target'])
+  onClick(targetElement: HTMLElement) {
+    event.preventDefault();
+
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    if (dropdownToggle.contains(targetElement)) {
+      dropdownMenu.classList.toggle('show');
+    } else {
+      dropdownMenu.classList.remove('show');
+    }
+  }
 }
