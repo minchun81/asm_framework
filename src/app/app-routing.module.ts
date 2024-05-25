@@ -21,7 +21,6 @@ const routes: Routes = [
     children: [
       { path: 'add-category', component: AddCategoryComponent },
       { path: 'edit-category', component: EditCategoryComponent },
-      // Các route khác cho list-category
     ]
   },
   
@@ -32,7 +31,6 @@ const routes: Routes = [
     children: [
       { path: 'add-product', component: AddProductComponent },
       { path: 'edit-product', component: EditProductComponent },
-      // Các route khác cho list-category
     ]
   },
   //user
@@ -42,7 +40,6 @@ const routes: Routes = [
     children: [
       { path: 'add-user', component: AddUserComponent },
       { path: 'edit-user', component: EditUserComponent },
-      // Các route khác cho list-category
     ]
   },
 
