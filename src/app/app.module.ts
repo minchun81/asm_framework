@@ -19,7 +19,8 @@ import { EditUserComponent } from './admin/user/edit-user/edit-user.component';
 import { ContactComponent } from './client/contact/contact/contact.component';
 import { LoginComponent } from './client/auth/login/login.component';
 import { RegisterComponent } from './client/auth/register/register.component';
-import { IndexComponent } from './client/index/index.component';
+import { ClientIndexComponent } from './client/client-index/client-index.component';
+import { ClientProductComponent } from './client/client-product/client-product.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { IndexComponent } from './client/index/index.component';
     HeaderComponent,
     LoginComponent,
     RegisterComponent,
-    IndexComponent,
+    ClientIndexComponent,
+    ClientProductComponent,
   ],
   imports: [
     BrowserModule,
