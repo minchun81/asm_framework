@@ -22,6 +22,7 @@ import { RegisterComponent } from './client/auth/register/register.component';
 import { ClientIndexComponent } from './client/client-index/client-index.component';
 import { ClientProductComponent } from './client/client-product/client-product.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
