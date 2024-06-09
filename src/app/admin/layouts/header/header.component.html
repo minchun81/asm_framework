@@ -27,17 +27,17 @@
         <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-white logo-dark">
             <!-- Brand demo (see assets/css/demo/demo.css) -->
             <div class="app-brand demo">
-                <span class="app-brand-logo demo">
-                  <img src="assets/img/logo.png" alt="Brand Logo" class="img-fluid">
+                <span class="app-brand-logo demo" routerLink="admin">
+                  <img  src="assets/img/logo.png" alt="Brand Logo" class="img-fluid">
               </span>
-                <a routerLink="home" class="app-brand-text demo sidenav-text font-weight-normal ml-2">Empire</a>
+                <a routerLink="admin" class="app-brand-text demo sidenav-text font-weight-normal ml-2">Empire</a>
             </div>
             <div class="sidenav-divider mt-0"></div>
             <!-- Links -->
             <ul class="sidenav-inner py-1">
                 <!-- Dashboards -->
                 <li class="sidenav-item active">
-                    <a routerLink="home" class="sidenav-link">
+                    <a routerLink="admin" class="sidenav-link">
                         <i class="fa fa-home"></i> &nbsp;
                         <div>Dashboards</div>
                         <div class="pl-1 ml-auto">
@@ -95,7 +95,7 @@
             <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-dark container-p-x" id="layout-navbar">
 
                 <!-- Brand demo (see assets/css/demo/demo.css) -->
-                <a routerLink="home" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+                <a routerLink="admin" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
                     <span class="app-brand-logo demo">
                       <img src="assets/img/logo-dark.png" alt="Brand Logo" class="img-fluid">
                   </span>
@@ -239,7 +239,7 @@
                     <!-- nội dung -->
 
 
-                        <router-outlet></router-outlet>
+                    <router-outlet></router-outlet>
 
 
                 </div>
