@@ -459,5 +459,16 @@
 .footer .footer-item p.mb-4 {
     line-height: 35px;
 }
-
+.fruite-item {
+    margin-bottom: 0; /* Đảm bảo không có margin dưới */
+  }
+  
+  .fruite-item .p-4 {
+    border-top: 1px solid #ced4da; /* Đặt border-top */
+  }
+  
+  .fruite-item:last-child .p-4 {
+    border-bottom: 1px solid #ced4da; /* Đặt border-bottom cho phần tử cuối cùng */
+  }
+  
 
