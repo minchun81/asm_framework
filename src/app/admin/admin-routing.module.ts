@@ -18,12 +18,15 @@ const routes: Routes = [
     component: AdminComponentComponent,
     children: [
       { path: '', component: IndexComponent }, // Route mặc định cho admin
+      // category
       { path: 'list-category', component: ListCategoryComponent },
       { path: 'edit-category', component: EditCategoryComponent },
       { path: 'add-category', component: AddCategoryComponent },
+      // product
       { path: 'list-product', component: ListProductComponent },
       { path: 'edit-product', component: EditProductComponent },
       { path: 'add-product', component: AddProductComponent },
+      // admin
       { path: 'list-user', component: ListUserComponent },
       { path: 'edit-user', component: EditUserComponent },
       { path: 'add-user', component: AddUserComponent },
