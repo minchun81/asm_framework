@@ -18,7 +18,6 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.loginForm.valid) {
-      // Xử lý đăng nhập ở đây
       console.log('Form submitted', this.loginForm.value);
     } else {
       this.validateAllFormFields(this.loginForm);
