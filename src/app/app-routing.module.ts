@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from './admin/index/index.component';
@@ -8,6 +8,10 @@ import { ListUserComponent } from './admin/user/list-user/list-user.component';
 import { ClientIndexComponent } from './client/client-index/client-index.component';
 import { ClientProductComponent } from './client/client-product/client-product.component';
 import { ContactComponent } from './client/contact/contact/contact.component';
+import { LoginComponent } from './client/auth/login/login.component';
+import { RegisterComponent } from './client/auth/register/register.component';
+import { componentFactoryName } from '@angular/compiler';
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: IndexComponent },
@@ -16,7 +20,10 @@ const routes: Routes = [
   { path: 'list-user', component: ListUserComponent },
   { path: 'client', component: ClientIndexComponent},
   { path: 'client-product', component: ClientProductComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'register', component: RegisterComponent},
+  { path: 'login', component:  LoginComponent}
+
 ]
 
 @NgModule({

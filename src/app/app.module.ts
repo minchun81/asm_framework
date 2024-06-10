@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ListCategoryComponent } from './admin/category/list-category/list-category.component';
 import { AddCategoryComponent } from './admin/category/add-category/add-category.component';
@@ -47,7 +48,8 @@ import { ClientProductComponent } from './client/client-product/client-product.c
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
