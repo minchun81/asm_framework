@@ -29,21 +29,21 @@
               <label class="label" for="username">Username</label>
               <input type="text" id="username" formControlName="username" class="form-control" placeholder="Username">
               <div *ngIf="loginForm.get('username').invalid && (loginForm.get('username').dirty || loginForm.get('username').touched)">
-                <small *ngIf="loginForm.get('username').errors.required">bắt buộc phải nhập Username.</small>
-                <small *ngIf="loginForm.get('username').errors.minlength">Username phải dài hơn 6 ký tự.</small>
-                <small *ngIf="loginForm.get('username').errors.pattern">Username không được chứa ký tự đặt biệt.</small>
+                <small *ngIf="loginForm.get('username').errors.required" class="error-message">bắt buộc phải nhập Username.</small>
+                <small *ngIf="loginForm.get('username').errors.minlength" class="error-message">Username phải dài hơn 6 ký tự.</small>
+                <small *ngIf="loginForm.get('username').errors.pattern" class="error-message">Username không được chứa ký tự đặt biệt.</small>
               </div>
             </div>
             <div class="form-group mb-3">
               <label class="label" for="password">Password</label>
               <input type="password" id="password" formControlName="password" class="form-control" placeholder="Password">
               <div *ngIf="loginForm.get('password').invalid && (loginForm.get('password').dirty || loginForm.get('password').touched)">
-                <small *ngIf="loginForm.get('password').errors.required">bắt buộc phải nhập mật khẩu.</small>
-                <small *ngIf="loginForm.get('password').errors.minlength">mật khẩu phải dài hơn 6 ký tự.</small>
+                <small *ngIf="loginForm.get('password').errors.required" class="error-message">bắt buộc phải nhập mật khẩu.</small>
+                <small *ngIf="loginForm.get('password').errors.minlength" class="error-message">mật khẩu phải dài hơn 6 ký tự.</small>
               </div>
             </div>
             <div class="form-group">
-              <button type="submit" class="form-control btn btn-primary submit px-3" >Sign In</button>
+              <button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
             </div>
             <div class="form-group d-md-flex">
               <div class="w-50 text-left">
